@@ -149,7 +149,8 @@ class GetCartForCustomer extends CartResolver
             if (in_array($productLink->getId(), $downloadableLinkIds)){
                 $downloadableLinks[] = [
                     'label' => $productLink->getTitle(),
-                    'id' => $productLink->getId()
+                    'id' => $productLink->getId(),
+                    'is_shareable' => $productLink->getIsShareable()
                 ];
             }
         }

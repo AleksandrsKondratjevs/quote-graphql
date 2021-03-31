@@ -231,6 +231,7 @@ type TotalsItem {
 type SelectedDownloadableLinks {
     label: String
     id: Int
+    is_shareable: Boolean
 }
 
 type TotalsSegment {
